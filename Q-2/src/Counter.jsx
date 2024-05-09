@@ -1,6 +1,8 @@
 import React from 'react'
 
-const Counter = (no, plus, minus, reset) => {
+const Counter = ({no, plus, minus, reset}) => {
+  
+
   return (
     <>
       <div class="w-100 d-flex flex-wrap align-items-center justify-content-between">
@@ -11,11 +13,11 @@ const Counter = (no, plus, minus, reset) => {
 
       </div>
       <div align="center" className='m-1'>
-        <h2 className='my-5'>Count : 0</h2>
+        <h2 className='my-5'>Count : {no}</h2>
         <div className='my-5 text-white'>g</div>
-        <button className='box'>+</button>
-        <button className='box mx-5 mb-5'>-</button>
-        <button className='box'>0</button>
+        <button className='box' onClick={() => plus()}>+</button>
+        <button className='box mx-5 mb-5' onClick={() => minus()}>-</button>
+        <button className='box' onClick={() => reset()}>0</button>
       </div>
     </>
   )

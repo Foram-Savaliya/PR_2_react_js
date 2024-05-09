@@ -19,11 +19,11 @@ function App() {
   }
 
   return (
-    <Counter 
-        no={count}
-        plus = {Increment}
-        minus = {Decrement}
-        reset = {Reset} />
+    <Counter
+      no={count}
+      plus={Increment}
+      minus={Decrement}
+      reset={Reset} />
   )
 }
 
