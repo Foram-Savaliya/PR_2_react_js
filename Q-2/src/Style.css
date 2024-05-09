@@ -1,0 +1,19 @@
+body{
+    width: 100%;
+    background-color: white;
+}
+
+.box{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    font-size: 24px;
+    line-height: 50px;
+}
+button{
+    padding: 0 !important;
+}
+
+.m-1{
+    margin-bottom: 1000px !important;
+}
